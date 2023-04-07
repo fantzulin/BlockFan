@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <title>It's me.</title>
+</head>
+<body>
+    <div class="container">
+        <div class="div-intro">
+            <p>Please enter "Chris".</p>
+            <input type="text" name="name" placeholder="Chris">
+            <div class="hint-name">
+                <p></p>
+                <button type="button" onclick="next_step('div-intro', 'div-skill')">Next Step</button>
+            </div>
+        </div>
+        <div class="div-skill">
+            <p>What kind of skills should I have?</p>
+            <div>
+                <input type="checkbox" name="" id="skill_html">
+                <label for="skill_html">HTML</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="skill_css">
+                <label for="skill_css">CSS,Sass</label>
+            </div>
+            <div>
+                <input type="checkbox" name="" id="skill_js">
+                <label for="skill_js">JavaScript,Vue.js</label>
+            </div>
+            <button type="button" onclick="show_div('hint-skill')">Submit</button>
+            
+            <div class="hint-skill">
+                <p></p>
+                <ul>
+                    <li><a href="https://face8.ai/" target="_blank">Brand Official Website</a></li>
+                    <li><a href="https://face8.ai/PAKKAPRO" target="_blank">Facial recognition attendance management</a> </li>
+                    <li><a href="https://youtu.be/Mgs9bR3w5D8" target="_blank">Facial recognition control for construction industry</a></li>
+                    <li><a href="https://youtu.be/G-EyTx0O-1o" target="_blank">Facial recognition control for gym</a></li>
+                    <li><a href="">MRT Timetables system for Zhongshan Station</a></li>
+                </ul>
+                <button type="button" onclick="next_step('div-skill', 'div-crypto')">Next Step</button>
+            </div>
+        </div>
+        <div class="div-crypto">
+            <p>Which is your favourite Crypto?</p>
+            <button type="button" name="crypto" data-crypto="bitcoin">BTC</button>
+            <button type="button" name="crypto" data-crypto="ethereum">ETH</button>
+            <button type="button" name="crypto" data-crypto="binance-coin">BNB</button>
+            <div class="hint-crypto">
+                <p class="sentence"></p>
+                <button type="button" onclick="next_step('div-crypto', '')">Next Step</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
