@@ -55,7 +55,7 @@ input[type="checkbox"]:checked ~ label::before{
     top: -5px;
     left: -40px;
     content: "";
-    background-image: url('logo.png');
+    background-image: url('../images/logo.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -91,7 +91,7 @@ button::before {
     left: -40px;
     content: '';
     visibility: hidden;
-    background-image: url('logo.png');
+    background-image: url('../images/logo.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
