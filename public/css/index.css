@@ -44,20 +44,14 @@ label {
     cursor: pointer;
 }
 
-input[type="checkbox"]:checked ~ label {
-    color: #ff6188;
-}
-
 input[type="checkbox"]:checked ~ label::before{
     position: absolute;
-    width: 40px;
-    height: 40px;
-    top: -5px;
+    width: 32px;
+    height: 32px;
+    top: -2px;
     left: -40px;
     content: "";
-    background-image: url('../images/logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: #fcfcfa;
 }
 
 .hint-name,

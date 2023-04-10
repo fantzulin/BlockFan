@@ -1,18 +1,16 @@
-let my_name = document.querySelector("input[name='name']");
+let my_name = document.querySelector("button[name='name']");
 let hint_name = document.querySelector(".hint-name");
 let i = 0;
 let speed = 100;
 let element 
 let text
 
-my_name.addEventListener("input", function(e){
-    console.log(e.target.value);
-    if (e.target.value == "Chris") {
-        hint_name.classList.add("show");
-        element = hint_name.querySelector("p");
-        text = "Hi I'm Chris. I'm a Front-end Developer.";
-        type_effect()
-    }
+my_name.addEventListener("click", function(e){
+    console.log("click")
+    hint_name.classList.add("show");
+    element = hint_name.querySelector("p");
+    text = "Hi I'm Chris. I'm a Front-end Developer.";
+    type_effect()
 })
 
 function type_effect() {
