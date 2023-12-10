@@ -1,0 +1,26 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: #ffffff;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    margin: 10px 0;
+}
+
+div {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+}
